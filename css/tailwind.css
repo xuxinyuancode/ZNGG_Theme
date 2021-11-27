@@ -1,3 +1,105 @@
+
+
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.topbar ul li{
+    font-size: 0.6rem;
+}
+.topbar ul li a:hover{
+    text-decoration: underline;
+}
+
+.topbar ul li:not(:first-child):before {
+    content: "\00A0|\00A0"
+}
+
+.hob{
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 2.258rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: scale(1,1);
+    opacity: 1;
+    border-radius: 2px;
+}
+
+.hobs-auto-1{
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 0.8rem 0;
+    margin: -0.8rem 0;
+
+}
+
+.hobs-auto-2{
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 1rem 0;
+    margin: -1rem 0;
+}
+
+.hobs::-webkit-scrollbar {
+    display: none;
+}
+
+.hobs li a{
+    white-space: nowrap;
+}
+.hobs li:hover > span{
+    visibility: visible;
+}
+
+footer{
+    background-color: #282828;
+}
+
+footer a:hover{
+    color: #c3c3c3;
+}
+
+footer .footer-item .footer-item-title {
+    color: rgba(255,255,255,.7);
+    border-bottom: 1px solid #333;
+    font-size: 1.1rem;
+    padding-bottom: 15px;
+}
+
+footer .footer-item .footer-item-text{
+    color: #666;
+    font-size: 0.85rem;
+}
+
+footer .footer-item .link {
+    padding: 12px;
+    border: 1px dashed #444;
+    font-size: 0.85rem;
+    margin: 1.6rem 0;
+
+}
+
+footer .footer-item .link .link-title {
+    color: rgba(255,255,255,.7);
+}
+footer .footer-item .link .link-item {
+    color: #666;
+    padding: 0 1.2rem;
+}
+
+footer .footer-bottom{
+    border-top: 1px solid #333;
+    padding: 0.8rem 0;
+}
+
+footer .footer-bottom li{
+    padding: 0 10px;
+    font-size: 13px;
+    color: #676b6f;
+}

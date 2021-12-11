@@ -1,14 +1,12 @@
-
-
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.topbar ul li{
+.topbar ul li {
     font-size: 0.6rem;
 }
-.topbar ul li a:hover{
+
+.topbar ul li a:hover {
     text-decoration: underline;
 }
 
@@ -16,7 +14,7 @@
     content: "\00A0|\00A0"
 }
 
-.hob{
+.hob {
     display: block;
     height: 4px;
     position: absolute;
@@ -26,12 +24,12 @@
     left: 0;
     margin-left: 10px;
     margin-right: 10px;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     opacity: 1;
     border-radius: 2px;
 }
 
-.hobs-auto-1{
+.hobs-auto-1 {
     overflow-x: auto;
     overflow-y: visible;
     padding: 0.8rem 0;
@@ -39,7 +37,7 @@
 
 }
 
-.hobs-auto-2{
+.hobs-auto-2 {
     overflow-x: auto;
     overflow-y: visible;
     padding: 1rem 0;
@@ -50,29 +48,39 @@
     display: none;
 }
 
-.hobs li a{
+.hobs li a {
     white-space: nowrap;
 }
-.hobs li:hover > span{
+
+.hobs li:hover>span {
     visibility: visible;
 }
 
-footer{
+.page-router li{
+    display: inline;
+}
+
+.page-router li:not(:first-child):before {
+    content: "\00A0->\00A0"
+}
+
+
+footer {
     background-color: #282828;
 }
 
-footer a:hover{
+footer a:hover {
     color: #c3c3c3;
 }
 
 footer .footer-item .footer-item-title {
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
     border-bottom: 1px solid #333;
     font-size: 1.1rem;
     padding-bottom: 15px;
 }
 
-footer .footer-item .footer-item-text{
+footer .footer-item .footer-item-text {
     color: #666;
     font-size: 0.85rem;
 }
@@ -86,20 +94,29 @@ footer .footer-item .link {
 }
 
 footer .footer-item .link .link-title {
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
 }
+
 footer .footer-item .link .link-item {
     color: #666;
     padding: 0 1.2rem;
 }
 
-footer .footer-bottom{
+footer .footer-bottom {
     border-top: 1px solid #333;
     padding: 0.8rem 0;
 }
 
-footer .footer-bottom li{
+footer .footer-bottom li {
     padding: 0 10px;
     font-size: 13px;
     color: #676b6f;
+}
+
+.markdown-body ul {
+    list-style: disc;
+}
+
+.markdown-body li {
+    list-style: circle;
 }

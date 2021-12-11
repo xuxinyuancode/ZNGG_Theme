@@ -52,6 +52,19 @@
             </div>
         </div>
     </header>
+    <div id="header">
+        123
+        123123123
+        123
+        123
+        123
+        123
+    </div>
+    <script>
+        fetch('/html/articles.html').then(data => {
+            document.getElementById('header').innerHTML=(data)
+        })
+    </script>
 </body>
 
 </html>

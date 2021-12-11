@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -9,31 +9,34 @@
     <title>Index</title>
 </head>
 
-<body class="bg-gray-100">
-    <header class="z-40 top-0 w-full h-20 bg-white shadow fixed">
+<body class="bg-gray-100 dark:bg-current">
+    <header class="z-40 top-0 w-full h-20 bg-white shadow dark:bg-current fixed">
         <div class="container mx-auto relative">
             <div class="flex justify-between pt-10">
-                <h1 class="logo text-xl font-black px-4"><a href="/html/index.html">ZNGG</a></h1>
+                <h1 class="logo text-xl font-black px-4 dark:text-gray-100"><a href="/html/index.html">ZNGG</a></h1>
                 <ul class="flex hobs hobs-auto-1">
                     <li class="text-base px-4 text-gray-600 font-normal flex relative hover:text-gray-900">
                         <a href="/html/index.html">网站首页</a>
-                        <span class="hob invisible bg-black "></span>
+                        <span class="hob invisible bg-black dark:bg-gray-600"></span>
                     </li>
                     <li class="text-base px-4 text-gray-600 font-normal flex relative">
                         <a href="">在线工具</a>
-                        <span class="hob invisible bg-black"></span>
+                        <span class="hob invisible bg-black dark:bg-gray-600"></span>
                     </li>
                     <li class="text-base px-4 text-gray-600 font-normal flex relative">
                         <a href="/html/articles.html">优质文章</a>
-                        <span class="hob visible bg-black"></span>
+                        <span class="hob visible bg-black dark:bg-gray-600"></span>
                     </li>
                     <li class="text-base px-4 text-gray-600 font-normal flex relative">
                         <a href="">API接口</a>
-                        <span class="hob invisible bg-black"></span>
+                        <span class="hob invisible bg-black dark:bg-gray-600"></span>
                     </li>
                     <li class="text-base px-4 text-gray-600 font-normal flex relative">
                         <a href="">源码下载</a>
-                        <span class="hob invisible bg-black "></span>
+                        <span class="hob invisible bg-black dark:bg-gray-600"></span>
+                    </li>
+                    <li class="px-2 my-auto flex relative">
+                        <span><img src="../image/system/search.svg" class="w-5 h-5 cursor-pointer" alt="" srcset=""></span>
                     </li>
                 </ul>
             </div>
@@ -53,11 +56,7 @@
         </div>
     </header>
     <div class="h-20"></div>
-    <section class="divide-y divide-gray-200 bg-white">
-        <div class="container mx-auto py-6 divide-solid relative px-4">
-            <p class="text-3xl mb-4 z-50">优质文章</p>
-            <p class="text-gray-500 leading-6 z-50">精选优质文章，每一篇都值得认真阅读。</p>
-        </div>
+    <section class="bg-white dark:bg-current">
         <div class="container mx-auto py-4">
             <ul class="flex hobs hobs-auto-2">
                 <li class="px-4 relative">
@@ -65,42 +64,52 @@
                     <span class="hob visible bg-red-700"></span>
                 </li>
                 <li class="px-4 relative">
-                    <a href="http://" class="hover:text-red-700">前端</a>
+                    <a href="http://" class="hover:text-red-700 dark:text-gray-400">前端</a>
                     <span class="hob invisible bg-red-700"></span>
                 </li>
                 <li class="px-4 relative">
-                    <a href="http://" class="hover:text-red-700">后端</a>
+                    <a href="http://" class="hover:text-red-700 dark:text-gray-400">后端</a>
                     <span class="hob invisible bg-red-700"></span>
                 </li>
                 <li class="px-4 relative">
-                    <a href="http://" class="hover:text-red-700">设计</a>
+                    <a href="http://" class="hover:text-red-700 dark:text-gray-400">设计</a>
                     <span class="hob invisible bg-red-700"></span>
                 </li>
                 <li class="px-4 relative">
-                    <a href="http://" class="hover:text-red-700">设计</a>
+                    <a href="http://" class="hover:text-red-700 dark:text-gray-400">设计</a>
                     <span class="hob invisible bg-red-700"></span>
                 </li>
                 <li class="px-4 relative">
-                    <a href="http://" class="hover:text-red-700">设计</a>
+                    <a href="http://" class="hover:text-red-700 dark:text-gray-400">设计</a>
                     <span class="hob invisible bg-red-700"></span>
                 </li>
                 <li class="px-4 relative">
-                    <a href="http://" class="hover:text-red-700">设计</a>
+                    <a href="http://" class="hover:text-red-700 dark:text-gray-400">设计</a>
                     <span class="hob invisible bg-red-700"></span>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="container mx-auto py-4 flex flex-wrap">
+    <section class="container mx-auto pt-4 flex flex-wrap">
+        <div class="px-4 text-sm">
+            <ul class="page-router">
+                <li><a href="">首页</a></li>
+                <li><a href="">优质文章</a></li>
+                <li><a href="">全部</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="container mx-auto pb-4 flex flex-wrap">
         <div class="w-full px-4 md:w-8/12">
-            <div class="my-4 px-10 py-6 mx-auto bg-white">
+            <div class="my-4 px-10 py-6 mx-auto bg-white dark:bg-current">
                 <div class="flex items-center justify-between"><span
                         class="font-light text-gray-600">2021-11-14</span><a href="/articles?sort=4"
                         class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">运维</a>
                 </div>
                 <div class="mt-2">
-                    <a href="/articles/1"
-                        class="text-2xl font-bold text-gray-700 hover:underline">不用密码连接到Linux服务器(使用密钥登陆Linux服务器 ssh)</a>
+                    <a href="/html/content.html"
+                        class="text-2xl font-bold text-gray-700 hover:underline dark:text-gray-400">不用密码连接到Linux服务器(使用密钥登陆Linux服务器
+                        ssh)</a>
                     <p class="mt-2 text-gray-600 leading-6 max-h-24 lg:max-h-12 break-all overflow-hidden">
                         对于自己常用的服务器来说，每次登陆服务器都需要输入密码确实很费劲，所以如何可以不使用密码登陆Linux服务器呢？不使用密码当然会使用其他东西了，例如：公钥私钥，所以问题就变成了如何使用公钥登陆Linux服务器
                     </p>
@@ -114,14 +123,15 @@
                         </a></div>
                 </div>
             </div>
-            <div class="my-4 px-10 py-6 mx-auto bg-white">
+            <div class="my-4 px-10 py-6 mx-auto bg-white dark:bg-current">
                 <div class="flex items-center justify-between"><span
                         class="font-light text-gray-600">2021-11-14</span><a href="/articles?sort=4"
                         class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">运维</a>
                 </div>
                 <div class="mt-2">
                     <a href="/articles/1"
-                        class="text-2xl font-bold text-gray-700 hover:underline">不用密码连接到Linux服务器(使用密钥登陆Linux服务器 ssh)</a>
+                        class="text-2xl font-bold text-gray-700 hover:underline dark:text-gray-400">不用密码连接到Linux服务器(使用密钥登陆Linux服务器
+                        ssh)</a>
                     <p class="mt-2 text-gray-600 leading-6 max-h-24 lg:max-h-12 break-all overflow-hidden">
                         对于自己常用的服务器来说，每次登陆服务器都需要输入密码确实很费劲，所以如何可以不使用密码登陆Linux服务器呢？不使用密码当然会使用其他东西了，例如：公钥私钥，所以问题就变成了如何使用公钥登陆Linux服务器
                     </p>
@@ -135,14 +145,15 @@
                         </a></div>
                 </div>
             </div>
-            <div class="my-4 px-10 py-6 mx-auto bg-white">
+            <div class="my-4 px-10 py-6 mx-auto bg-white dark:bg-current">
                 <div class="flex items-center justify-between"><span
                         class="font-light text-gray-600">2021-11-14</span><a href="/articles?sort=4"
                         class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">运维</a>
                 </div>
                 <div class="mt-2">
                     <a href="/articles/1"
-                        class="text-2xl font-bold text-gray-700 hover:underline">不用密码连接到Linux服务器(使用密钥登陆Linux服务器 ssh)</a>
+                        class="text-2xl font-bold text-gray-700 hover:underline dark:text-gray-400">不用密码连接到Linux服务器(使用密钥登陆Linux服务器
+                        ssh)</a>
                     <p class="mt-2 text-gray-600 leading-6 max-h-24 lg:max-h-12 break-all overflow-hidden">
                         对于自己常用的服务器来说，每次登陆服务器都需要输入密码确实很费劲，所以如何可以不使用密码登陆Linux服务器呢？不使用密码当然会使用其他东西了，例如：公钥私钥，所以问题就变成了如何使用公钥登陆Linux服务器
                     </p>
@@ -156,14 +167,15 @@
                         </a></div>
                 </div>
             </div>
-            <div class="my-4 px-10 py-6 mx-auto bg-white">
+            <div class="my-4 px-10 py-6 mx-auto bg-white dark:bg-current">
                 <div class="flex items-center justify-between"><span
                         class="font-light text-gray-600">2021-11-14</span><a href="/articles?sort=4"
                         class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">运维</a>
                 </div>
                 <div class="mt-2">
                     <a href="/articles/1"
-                        class="text-2xl font-bold text-gray-700 hover:underline">不用密码连接到Linux服务器(使用密钥登陆Linux服务器 ssh)</a>
+                        class="text-2xl font-bold text-gray-700 hover:underline dark:text-gray-400">不用密码连接到Linux服务器(使用密钥登陆Linux服务器
+                        ssh)</a>
                     <p class="mt-2 text-gray-600 leading-6 max-h-24 lg:max-h-12 break-all overflow-hidden">
                         对于自己常用的服务器来说，每次登陆服务器都需要输入密码确实很费劲，所以如何可以不使用密码登陆Linux服务器呢？不使用密码当然会使用其他东西了，例如：公钥私钥，所以问题就变成了如何使用公钥登陆Linux服务器
                     </p>
@@ -177,22 +189,45 @@
                         </a></div>
                 </div>
             </div>
+            <div class="my-4 px-10 py-6 mx-auto bg-white dark:bg-current">
+                <div class="flex items-center justify-between"><span
+                        class="font-light text-gray-600">2021-11-14</span><a href="/articles?sort=4"
+                        class="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">运维</a>
+                </div>
+                <div class="mt-2">
+                    <a href="/articles/1"
+                        class="text-2xl font-bold text-gray-700 hover:underline dark:text-gray-400">不用密码连接到Linux服务器(使用密钥登陆Linux服务器
+                        ssh)</a>
+                    <p class="mt-2 text-gray-600 leading-6 max-h-24 lg:max-h-12 break-all overflow-hidden">
+                        对于自己常用的服务器来说，每次登陆服务器都需要输入密码确实很费劲，所以如何可以不使用密码登陆Linux服务器呢？不使用密码当然会使用其他东西了，例如：公钥私钥，所以问题就变成了如何使用公钥登陆Linux服务器
+                    </p>
+                </div>
+                <div class="flex items-center justify-between mt-4"><a href="/articles/1"
+                        class="text-blue-500 hover:underline">阅读更多</a>
+                    <div><a href="#" class="flex items-center"><img
+                                src="../image/user/c7d78aa6f398e5ea7bdb7a9392ec927.jpg" alt="avatar"
+                                class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block">
+                            <h1 class="font-bold text-gray-700 hover:underline">CV工程师</h1>
+                        </a></div>
+                </div>
+            </div>
+
             <div class="flex page-info">
                 <a href="/articles?page=1"
-                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md">上一页</a>
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">上一页</a>
                 <a href="/articles?page=1"
-                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md">1</a>
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">1</a>
                 <a href="/articles?page=1"
-                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-white bg-red-700 rounded-md">2</a>
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-white bg-red-700 rounded-md dark:bg-gray-800 dark:text-gray-400">2</a>
                 <a href="/articles?page=1"
-                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md">3</a>
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">3</a>
                 <a href="/articles?page=1"
-                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md">下一页</a>
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">下一页</a>
 
             </div>
         </div>
         <div class="w-full md:w-4/12 p-4">
-            <div class="bg-white p-4 divide-y divide-gray-200 mb-4">
+            <div class="bg-white p-4 divide-y divide-gray-200 mb-4 dark:bg-current">
                 <p class="text-lg">最受欢迎</p>
                 <ul class="pt-4">
                     <li class="leading-8"><a href="http://">不用密码连接到Linux服务器</a></li>
@@ -203,10 +238,10 @@
                     <li class="leading-8"><a href="http://">不用密码连接到Linux服务器</a></li>
                 </ul>
             </div>
-            <div class="bg-white p-4 divide-y divide-gray-200 mb-4">
+            <div class="bg-white p-4 divide-y divide-gray-200 mb-4 dark:bg-current">
                 ad
             </div>
-            <div class="bg-white p-4 divide-y divide-gray-200">
+            <div class="bg-white p-4 divide-y divide-gray-200 mb-4 dark:bg-current dark:text-gray-500">
                 <p class="text-lg">最受欢迎</p>
                 <ul class="pt-4">
                     <li class="leading-8"><a href="http://">不用密码连接到Linux服务器</a></li>
@@ -220,7 +255,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer dark:bg-current">
         <div class="container mx-auto flex py-4 flex-wrap">
             <div class="footer-item w-full md:w-3/12 p-6">
                 <p class="footer-item-title">ZNGG在线工具</p>

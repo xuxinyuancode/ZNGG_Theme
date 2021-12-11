@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tailwind.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <include data="/html/header.html"></include>
+    <include data="/html/footer.html"></include>
+    <script>
+        let includeGroup = document.getElementsByTagName("include");
+        var i = 0;
+        for (i; i < includeGroup.length; i++) {
+            get(includeGroup[i])
+        }
+        async function get(e) {
+            console.log(e.getAttribute('data'))
+            var response = await fetch(e.getAttribute('data'));
+            var body = await response.text();
+            e.innerHTML = body
+        }
+    </script>
+</body>
+
+</html>

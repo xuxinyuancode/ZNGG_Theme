@@ -17,12 +17,28 @@ echo '@import "tailwindcss/base";
 // 在package.json中写入"dev": "vite"
 npx tailwindcss init -p
 
-
-
-mavon editor
+```
 
 
 
+地址：
+
+|  网站   | url  |
+|  ----  | ----  |
+| 首页  | / |
+| 文章列表  | article.html |
+| 文章列表_1  | article-{页码}.html |
+| 文章列表_2  | article-{页码}.html |
+| 文章阅读  | detail-{id}.html |
+| 工具列表  | tool.html |
+| 工具列表_1  | tool-{页码}.html |
+| 工具列表_2  | tool-{分类}-{页码}.html |
+| 工具页面  | thread-{id}.html |
+
+
+
+
+编辑器：mavon editor
 
 ```
 

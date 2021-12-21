@@ -1,7 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
 .topbar ul li {
     font-size: 0.6rem;
 }
@@ -34,7 +33,6 @@
     overflow-y: visible;
     padding: 0.8rem 0;
     margin: -0.8rem 0;
-
 }
 
 .hobs-auto-2 {
@@ -70,27 +68,31 @@
 }
 
 @screen md {
+    .tool-list {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .tool-list div .tool-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    /* .tool-list div:nth-child(4n+1) .tool-item {
+        margin-left: 0;
+        margin-right: 1rem;
+    }
     .tool-list div:nth-child(4n+2) .tool-item {
         margin-left: 0.5rem;
         margin-right: 0.75rem;
     }
-
     .tool-list div:nth-child(4n+3) .tool-item {
         margin-left: 0.75rem;
         margin-right: 0.5rem;
     }
-
-    .tool-list div:nth-child(4n+1) .tool-item {
-        margin-left: 0;
-        margin-right: 1rem;
-    }
-
     .tool-list div:nth-child(4n+4) .tool-item {
         margin-left: 1rem;
         margin-right: 0;
-    }
+    } */
 }
-
 
 footer {
     background-color: #282828;
@@ -117,7 +119,6 @@ footer .footer-item .link {
     border: 1px dashed #444;
     font-size: 0.85rem;
     margin: 1.6rem 0;
-
 }
 
 footer .footer-item .link .link-title {

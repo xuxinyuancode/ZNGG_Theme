@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>英文大小写在线转换 -ZNGG在线工具</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/tailwind.css">
     <link rel="icon" type="image/ico" th:href="@{/static/favicon.ico}">
 </head>
@@ -36,7 +36,8 @@
                         <span class="hob invisible bg-black dark:bg-gray-600"></span>
                     </li>
                     <li class="px-2 my-auto flex relative md:hidden">
-                        <span><img src="../image/system/menu.svg" class="w-5 h-5 cursor-pointer" alt="" srcset=""></span>
+                        <span><img src="../image/system/menu.svg" class="w-5 h-5 cursor-pointer" alt=""
+                                srcset=""></span>
                     </li>
                     <li class="px-2 my-auto flex relative">
                         <span><img src="../image/system/search.svg" class="w-5 h-5 cursor-pointer" alt=""
@@ -59,151 +60,151 @@
             </div>
         </div>
     </header>
-<section class="bg-gray-100 pt-28 pb-7">
-    <div class="container px-4 mx-auto">
-        <div class="md:flex md:-mx-4 md:items-center xl:py-4">
-            <div class="md:w-1/2 px-4">
-                <p class="text-2xl text-black">英文大小写在线转换</p>
+    <section class="bg-gray-100 pt-28 pb-6">
+        <div class="container px-4 mx-auto">
+            <div class="md:flex md:-mx-4 md:items-center xl:py-4">
+                <div class="md:w-1/2 px-4">
+                    <p class="text-2xl text-black">英文大小写在线转换</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="w-full container px-8 mx-auto py-12">
-    <div class="relative">
-        <textarea id="textBox" autofocus
-                  class="text-gray-600 w-full bg-gray-100 boder-left boder-bottom outline-none p-3"
-                  rows="8"></textarea>
-        <span id="textLengthTag" class="absolute px-2 py-1 text-xs text-white bg-blue-500 rounded right-4 bottom-6">0</span>
-    </div>
-    <div class="flex flex-row flex-wrap">
-        <button
+    </section>
+    <section class="w-full container px-8 mx-auto py-12">
+        <div class="relative">
+            <textarea id="textBox" autofocus
+                class="text-gray-600 w-full bg-gray-100 boder-left boder-bottom outline-none p-3" rows="8"></textarea>
+            <span id="textLengthTag"
+                class="absolute px-2 py-1 text-xs text-white bg-blue-500 rounded right-4 bottom-6">0</span>
+        </div>
+        <div class="flex flex-row flex-wrap">
+            <button
                 class="flex block m-2 py-2 px-4 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none"
                 onclick="toUpperCaseAll()">
-            单词大写
-        </button>
-        <button
+                单词大写
+            </button>
+            <button
                 class="flex block m-2 py-2 px-4 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none"
                 onclick="toLowerCaseAll()">
-            单词小写
-        </button>
-        <button class=" flex block m-2 py-2 px-4 font-medium tracking-widest text-white uppercase bg-black shadow-lg
+                单词小写
+            </button>
+            <button class=" flex block m-2 py-2 px-4 font-medium tracking-widest text-white uppercase bg-black shadow-lg
                 focus:outline-none hover:bg-gray-900 hover:shadow-none" onclick="toFirstLetterCase()">
-            首字母大写
-        </button>
-        <button class=" flex block m-2 py-2 px-4 font-medium tracking-widest text-white uppercase bg-black shadow-lg
+                首字母大写
+            </button>
+            <button class=" flex block m-2 py-2 px-4 font-medium tracking-widest text-white uppercase bg-black shadow-lg
                 focus:outline-none hover:bg-gray-900 hover:shadow-none" onclick="toCopy(this)">
-            一键复制
-        </button>
-    </div>
-</section>
-<footer class="footer dark:bg-current">
-    <div class="container mx-auto flex py-4 flex-wrap">
-        <div class="footer-item w-full md:w-3/12 p-6">
-            <p class="footer-item-title">ZNGG在线工具</p>
-            <p class="footer-item-text py-4">一个集颜值、功能于一身的在线工具网站，为各类人事提供服务。</p>
+                一键复制
+            </button>
         </div>
-        <div class="footer-item w-full md:w-3/12 p-6">
-            <p class="footer-item-title">站内链接</p>
-            <ul class="flex justify-between flex-wrap py-4">
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">工具大全</a></li>
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">文章阅读</a></li>
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">会员登陆</a></li>
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">欢迎投稿</a></li>
-            </ul>
-        </div>
-        <div class="footer-item w-full md:w-3/12 p-6">
-            <p class="footer-item-title">站务处理</p>
-            <ul class="flex justify-between flex-wrap py-4">
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">侵权处理</a></li>
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">工单提交</a></li>
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">联系我们</a></li>
-                <li class="w-6/12 footer-item-text py-1"><a href="http://">版权声明</a></li>
-            </ul>
-        </div>
-        <div class="footer-item w-full md:w-3/12 p-6">
-            <img src="../image/system/gxylyn.png" alt="" srcset="">
-        </div>
-    </div>
-    <div class="container mx-auto flex">
-        <div class="footer-item px-6 w-full">
-            <div class="link flex">
-                <ul class="flex">
-                    <li class="link-title">友情链接：</li>
-                    <li class="link-item"><a href="">Linux运维</a></li>
-                    <li class="link-item"><a href="">Linux运维</a></li>
+    </section>
+    <footer class="footer dark:bg-current">
+        <div class="container mx-auto flex py-4 flex-wrap">
+            <div class="footer-item w-full md:w-3/12 p-6">
+                <p class="footer-item-title">ZNGG在线工具</p>
+                <p class="footer-item-text py-4">一个集颜值、功能于一身的在线工具网站，为各类人事提供服务。</p>
+            </div>
+            <div class="footer-item w-full md:w-3/12 p-6">
+                <p class="footer-item-title">站内链接</p>
+                <ul class="flex justify-between flex-wrap py-4">
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">工具大全</a></li>
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">文章阅读</a></li>
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">会员登陆</a></li>
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">欢迎投稿</a></li>
                 </ul>
             </div>
+            <div class="footer-item w-full md:w-3/12 p-6">
+                <p class="footer-item-title">站务处理</p>
+                <ul class="flex justify-between flex-wrap py-4">
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">侵权处理</a></li>
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">工单提交</a></li>
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">联系我们</a></li>
+                    <li class="w-6/12 footer-item-text py-1"><a href="http://">版权声明</a></li>
+                </ul>
+            </div>
+            <div class="footer-item w-full md:w-3/12 p-6">
+                <img src="../image/system/gxylyn.png" alt="" srcset="">
+            </div>
         </div>
-        <hr>
-    </div>
-    <div class="container footer-bottom mx-auto pt-6 px-6 flex justify-between flex-wrap-reverse">
-        <ul class="block footer-bottom-left">
-            <li class="inline">© 2021 ZNGG在线工具 - ZNGG All rights reserved</li>
-        </ul>
-        <ul class="block footer-bottom-right">
-            <li class="inline">ZNGG系列程序均为自主开发</li>
-        </ul>
-    </div>
-</footer>
-<script>
-    let textBox = document.getElementById("textBox")
-    let textLengthTag = document.getElementById("textLengthTag")
+        <div class="container mx-auto flex">
+            <div class="footer-item px-6 w-full">
+                <div class="link flex">
+                    <ul class="flex">
+                        <li class="link-title">友情链接：</li>
+                        <li class="link-item"><a href="">Linux运维</a></li>
+                        <li class="link-item"><a href="">Linux运维</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container footer-bottom mx-auto pt-6 px-6 flex justify-between flex-wrap-reverse">
+            <ul class="block footer-bottom-left">
+                <li class="inline">© 2021 ZNGG在线工具 - ZNGG All rights reserved</li>
+            </ul>
+            <ul class="block footer-bottom-right">
+                <li class="inline">ZNGG系列程序均为自主开发</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let textBox = document.getElementById("textBox")
+        let textLengthTag = document.getElementById("textLengthTag")
 
-    function toUpperCaseAll() {
-        textBox.value = textBox.value.toUpperCase()
-    }
+        function toUpperCaseAll() {
+            textBox.value = textBox.value.toUpperCase()
+        }
 
-    function toLowerCaseAll() {
-        textBox.value = textBox.value.toLowerCase()
-    }
+        function toLowerCaseAll() {
+            textBox.value = textBox.value.toLowerCase()
+        }
 
-    function toFirstLetterCase() {
-        var index;
-        var tmpStr;
-        var tmpChar;
-        var preString;
-        var postString;
-        var strLen;
-        tmpStr = textBox.value.toLowerCase();
-        strLen = tmpStr.length;
-        if (strLen > 0) {
-            for (index = 0; index < strLen; index++) {
-                if (index == 0) {
-                    tmpChar = tmpStr.substring(0, 1).toUpperCase();
-                    postString = tmpStr.substring(1, strLen);
-                    tmpStr = tmpChar + postString;
-                } else {
-                    tmpChar = tmpStr.substring(index, index + 1);
-                    if (tmpChar == " " && index < (strLen - 1)) {
-                        tmpChar = tmpStr.substring(index + 1, index + 2).toUpperCase();
-                        preString = tmpStr.substring(0, index + 1);
-                        postString = tmpStr.substring(index + 2, strLen);
-                        tmpStr = preString + tmpChar + postString;
+        function toFirstLetterCase() {
+            var index;
+            var tmpStr;
+            var tmpChar;
+            var preString;
+            var postString;
+            var strLen;
+            tmpStr = textBox.value.toLowerCase();
+            strLen = tmpStr.length;
+            if (strLen > 0) {
+                for (index = 0; index < strLen; index++) {
+                    if (index == 0) {
+                        tmpChar = tmpStr.substring(0, 1).toUpperCase();
+                        postString = tmpStr.substring(1, strLen);
+                        tmpStr = tmpChar + postString;
+                    } else {
+                        tmpChar = tmpStr.substring(index, index + 1);
+                        if (tmpChar == " " && index < (strLen - 1)) {
+                            tmpChar = tmpStr.substring(index + 1, index + 2).toUpperCase();
+                            preString = tmpStr.substring(0, index + 1);
+                            postString = tmpStr.substring(index + 2, strLen);
+                            tmpStr = preString + tmpChar + postString;
+                        }
                     }
                 }
             }
+            textBox.value = tmpStr;
         }
-        textBox.value = tmpStr;
-    }
 
-    function toCopy(e) {
-        textBox.select()
-        document.execCommand("copy");
-        e.innerText = "复制完成"
-        window.setTimeout(function(){
-            e.innerText = "一键复制"
-        },800)
-    }
+        function toCopy(e) {
+            textBox.select()
+            document.execCommand("copy");
+            e.innerText = "复制完成"
+            window.setTimeout(function () {
+                e.innerText = "一键复制"
+            }, 800)
+        }
 
-    window.setInterval("textLengthListener()",10)
+        window.setInterval("textLengthListener()", 10)
 
-    function textLengthListener(){
-        textLengthTag.innerText = textBox.value.length
-    }
+        function textLengthListener() {
+            textLengthTag.innerText = textBox.value.length
+        }
 
-</script>
-<div th:replace="common/js"></div>
-<div th:replace="common/footer"></div>
+    </script>
+    <div th:replace="common/js"></div>
+    <div th:replace="common/footer"></div>
 </body>
 
 </html>

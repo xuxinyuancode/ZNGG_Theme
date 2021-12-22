@@ -35,8 +35,9 @@
                         <a href="">源码下载</a>
                         <span class="hob invisible bg-black dark:bg-gray-600"></span>
                     </li>
-                    <li class="px-2 my-auto flex relative md:hidden">
-                        <span><img src="../image/system/menu.svg" class="w-5 h-5 cursor-pointer" alt="" srcset=""></span>
+                    <li onclick="openMenu()" class="px-2 my-auto flex relative md:hidden">
+                        <span><img src="../image/system/menu.svg" class="w-5 h-5 cursor-pointer" alt=""
+                                srcset=""></span>
                     </li>
                     <li class="px-2 my-auto flex relative">
                         <span><img src="../image/system/search.svg" class="w-5 h-5 cursor-pointer" alt=""
@@ -59,6 +60,52 @@
             </div>
         </div>
     </header>
+    <section id="mobileMenu" class="t-0 l-0 h-screen w-screen fixed z-50 hiddeframe mobile-show-menu-bg">
+        <div onclick="closeMenu()" class="w-3/12"></div>
+        <div class="w-9/12 bg-white mobile-show-menu">
+            <div class="flex p-4">
+                <p class="text-xl font-bold">首页</p>
+            </div>
+            <hr class="mx-4">
+            <ul class="p-4 w-full">
+                <li class="py-3">
+                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
+                        <p>在线工具</p>
+                    </div>
+                    <ul class="hidden">
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                    </ul>
+                </li>
+                <li class="py-3">
+                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
+                        <p>优质文章</p>
+                    </div>
+                    <ul class="hidden">
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                    </ul>
+                </li>
+                <li class="py-3">
+                    <div class="flex justify-between items-center">
+                        <p>API接口</p>
+                    </div>
+                </li>
+                <li class="py-3">
+                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
+                        <p>源码下载</p>
+                    </div>
+                    <ul class="hidden">
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
     <div class="h-20"></div>
     <section class="text-white body-font flex-1 flex flex-col justify-center bg-gray-700">
         <div class="container mx-auto flex flex-wrap justify-between px-4">
@@ -73,25 +120,32 @@
         <div class="container mx-auto p-2">
             <ul class="flex py-1 w-full overflow-x-scroll hobs">
                 <li class="px-1 relative">
-                    <a href="http://" class="text-white text-sm font-bold bg-gray-600 px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">全部</a>
+                    <a href="http://"
+                        class="text-white text-sm font-bold bg-gray-600 px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">全部</a>
                 </li>
                 <li class="px-1 relative">
-                    <a href="http://" class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">前端</a>
+                    <a href="http://"
+                        class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">前端</a>
                 </li>
                 <li class="px-1 relative">
-                    <a href="http://" class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">后端</a>
+                    <a href="http://"
+                        class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">后端</a>
                 </li>
                 <li class="px-1 relative">
-                    <a href="http://" class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
+                    <a href="http://"
+                        class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
                 </li>
                 <li class="px-1 relative">
-                    <a href="http://" class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
+                    <a href="http://"
+                        class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
                 </li>
                 <li class="px-1 relative">
-                    <a href="http://" class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
+                    <a href="http://"
+                        class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
                 </li>
                 <li class="px-1 relative">
-                    <a href="http://" class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
+                    <a href="http://"
+                        class="text-gray-700 text-sm font-bold px-4 py-1 rounded-full hover:bg-gray-600 hover:text-white">设计</a>
                 </li>
             </ul>
         </div>
@@ -115,7 +169,9 @@
                             </div>
                             <div class="mr-4">
                                 <a href="">
-                                    <p class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">立即使用</p>
+                                    <p
+                                        class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">
+                                        立即使用</p>
                                 </a>
                             </div>
 
@@ -138,7 +194,9 @@
                             </div>
                             <div class="mr-4">
                                 <a href="">
-                                    <p class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">立即使用</p>
+                                    <p
+                                        class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">
+                                        立即使用</p>
                                 </a>
                             </div>
 
@@ -161,7 +219,9 @@
                             </div>
                             <div class="mr-4">
                                 <a href="">
-                                    <p class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">立即使用</p>
+                                    <p
+                                        class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">
+                                        立即使用</p>
                                 </a>
                             </div>
 
@@ -184,7 +244,9 @@
                             </div>
                             <div class="mr-4">
                                 <a href="">
-                                    <p class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">立即使用</p>
+                                    <p
+                                        class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">
+                                        立即使用</p>
                                 </a>
                             </div>
 
@@ -207,7 +269,9 @@
                             </div>
                             <div class="mr-4">
                                 <a href="">
-                                    <p class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">立即使用</p>
+                                    <p
+                                        class="border font-light py-1 px-3 text-sm rounded-full hover:bg-gray-700 hover:text-white">
+                                        立即使用</p>
                                 </a>
                             </div>
 
@@ -224,11 +288,16 @@
 
 
             <div class="flex page-info justify-end">
-                <a href="/articles?page=1" class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">上一页</a>
-                <a href="/articles?page=1" class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">1</a>
-                <a href="/articles?page=1" class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-white bg-red-700 rounded-md dark:bg-gray-800 dark:text-gray-400">2</a>
-                <a href="/articles?page=1" class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">3</a>
-                <a href="/articles?page=1" class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">下一页</a>
+                <a href="/articles?page=1"
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">上一页</a>
+                <a href="/articles?page=1"
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">1</a>
+                <a href="/articles?page=1"
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-white bg-red-700 rounded-md dark:bg-gray-800 dark:text-gray-400">2</a>
+                <a href="/articles?page=1"
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">3</a>
+                <a href="/articles?page=1"
+                    class="px-3 py-2 mx-1 hover:bg-red-700 hover:text-white font-medium text-gray-500 bg-white rounded-md dark:bg-gray-800">下一页</a>
 
             </div>
         </div>
@@ -283,6 +352,26 @@
             </ul>
         </div>
     </footer>
+    <script>
+        const mobileMenu = document.getElementById("mobileMenu")
+        function openMenu() {
+            mobileMenu.classList.add("flex")
+            mobileMenu.classList.remove("hiddeframe")
+        }
+        function closeMenu() {
+            mobileMenu.classList.remove("flex")
+            mobileMenu.classList.add("hiddeframe")
+        }
+        function menuChileToggle(event) {
+            if (event.parentNode.children[1].getAttribute("class").indexOf("hidden") == -1) {
+                event.parentNode.children[1].classList.add("hidden")
+                event.classList.remove("child-arrow-down-to-up")
+            }else{
+                event.parentNode.children[1].classList.remove("hidden")
+                event.classList.add("child-arrow-down-to-up")
+            }
+        }
+    </script>
 </body>
 
 </html>

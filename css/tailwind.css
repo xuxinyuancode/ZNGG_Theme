@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
 .topbar ul li {
     font-size: 0.6rem;
 }
@@ -67,15 +68,78 @@
     margin-right: 0.5rem;
 }
 
+.child-arrow-down::after {
+    display: block;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGLSURBVHgB7ZoxboMwFEBtuiLVKwvtISokxNCh7JU4QDt071E6dO/QC3ACKjUrp0gHdsoBIHaUSFHkWMb2t/Sj/zZA8HnYwP+2+bIsN+yKSdiVQ4LYIUHskCB2SBA7JIgdEsQOCWKHBLHjLFhV1WNZls8sEq7xuMuQRVEUH/M8vx82t0KIp67r/hgQMt6XjPd6jJfn+UPbtqPNuatbsGkacSKnuB/H8aeu6zsGwJncPt4wDC+2568WnKbpVrMbRFIjt4dz/s8sWS2oumKSJJ+aQ0ElL8lJtmma/jJLuOuwoekGfN/JkNd2/or2ff8mW/Jbc8irJUM/OK//YGhJiF7h/aMPJQnV5YNkMr6SkO9zsFTNVRJSThE0F10rCS2nCJ5s20rGkFNwqOkzk4B8AJsYcgoOOT9okNQBkrSD1oOG7noOWEUCXvBaSIKWW1EqeoMkeC0ZbcjiIHlahYDLKXjsRQhq6EF+eESWZRvbqtwHTqsskEOC2CFB7JAgdkgQOySIHRLEDglihwSxswPmHh7zA+d1uwAAAABJRU5ErkJggg==);
+    background-size: contain;
+    transition: transform .3s;
+}
+
+.child-arrow-down-to-up::after {
+    transform: rotate(180deg);
+}
+
+@keyframes right-to-left {
+    0% {
+        transform: translateX(120vw)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes bg-show {
+    0% {
+        background-color: rgb(0, 0, 0, .2)
+    }
+
+    100% {
+        background-color: rgb(0, 0, 0, .8)
+    }
+}
+@keyframes hiddeframe {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(120vw);
+        display: none;
+    }
+}
+
+.hiddeframe {
+    animation-name: hiddeframe;
+    animation-duration: 0.2s;
+    display: none;
+}
+
+.mobile-show-menu-bg {
+    background-color: rgb(0, 0, 0, .8);
+    animation-name: bg-show;
+    transition-duration: all 0.2s;
+}
+
+.mobile-show-menu {
+    animation-name: right-to-left;
+    animation-duration: 0.4s;
+}
+
 @screen md {
     .tool-list {
         margin-left: -1rem;
         margin-right: -1rem;
     }
+
     .tool-list div .tool-item {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     /* .tool-list div:nth-child(4n+1) .tool-item {
         margin-left: 0;
         margin-right: 1rem;

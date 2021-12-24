@@ -60,7 +60,7 @@
             </div>
         </div>
     </header>
-    <section id="mobileMenu" class="t-0 l-0 h-screen w-screen fixed z-50 hiddeframe mobile-show-menu-bg">
+    <section id="mobileMenu" class="t-0 l-0 b-0 h-screen w-screen fixed z-50 mobile-show-menu-bg flex">
         <div onclick="closeMenu()" class="w-3/12"></div>
         <div class="w-9/12 bg-white mobile-show-menu">
             <div class="flex p-4">
@@ -70,12 +70,12 @@
             <ul class="p-4 w-full">
                 <li class="py-3">
                     <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
-                        <p>在线工具</p>
+                        <p class="text-red-700">在线工具</p>
                     </div>
                     <ul class="hidden">
-                        <li class="m-4 text-sm">测试列表</li>
-                        <li class="m-4 text-sm">测试列表</li>
-                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">全部</li>
+                        <li class="m-4 text-sm">前端</li>
+                        <li class="m-4 text-sm">设计</li>
                     </ul>
                 </li>
                 <li class="py-3">
@@ -355,12 +355,10 @@
     <script>
         const mobileMenu = document.getElementById("mobileMenu")
         function openMenu() {
-            mobileMenu.classList.add("flex")
-            mobileMenu.classList.remove("hiddeframe")
+            mobileMenu.classList.add("on")
         }
         function closeMenu() {
-            mobileMenu.classList.remove("flex")
-            mobileMenu.classList.add("hiddeframe")
+            mobileMenu.classList.remove("on")
         }
         function menuChileToggle(event) {
             if (event.parentNode.children[1].getAttribute("class").indexOf("hidden") == -1) {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tailwind.css">
+    <script src="../js/site.js"></script>
     <title>Index</title>
 </head>
 
@@ -60,52 +61,6 @@
             </div>
         </div>
     </header>
-    <section id="mobileMenu" class="t-0 l-0 b-0 h-screen w-screen fixed z-50 mobile-show-menu-bg flex">
-        <div onclick="closeMenu()" class="w-3/12"></div>
-        <div class="w-9/12 bg-white mobile-show-menu">
-            <div class="flex p-4">
-                <p class="text-xl font-bold">首页</p>
-            </div>
-            <hr class="mx-4">
-            <ul class="p-4 w-full">
-                <li class="py-3">
-                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
-                        <p class="text-red-700">在线工具</p>
-                    </div>
-                    <ul class="hidden">
-                        <li class="m-4 text-sm">全部</li>
-                        <li class="m-4 text-sm">前端</li>
-                        <li class="m-4 text-sm">设计</li>
-                    </ul>
-                </li>
-                <li class="py-3">
-                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
-                        <p>优质文章</p>
-                    </div>
-                    <ul class="hidden">
-                        <li class="m-4 text-sm">测试列表</li>
-                        <li class="m-4 text-sm">测试列表</li>
-                        <li class="m-4 text-sm">测试列表</li>
-                    </ul>
-                </li>
-                <li class="py-3">
-                    <div class="flex justify-between items-center">
-                        <p>API接口</p>
-                    </div>
-                </li>
-                <li class="py-3">
-                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
-                        <p>源码下载</p>
-                    </div>
-                    <ul class="hidden">
-                        <li class="m-4 text-sm">测试列表</li>
-                        <li class="m-4 text-sm">测试列表</li>
-                        <li class="m-4 text-sm">测试列表</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
     <div class="h-20"></div>
     <section class="text-white body-font flex-1 flex flex-col justify-center bg-gray-700">
         <div class="container mx-auto flex flex-wrap justify-between px-4">
@@ -302,7 +257,52 @@
             </div>
         </div>
     </section>
-
+    <section id="mobileMenu" class="top-0 left-0 bottom-0 w-screen fixed z-50 mobile-show-menu-bg flex">
+        <div onclick="closeMenu()" class="w-3/12"></div>
+        <div class="w-9/12 bg-white mobile-show-menu">
+            <div class="flex p-4">
+                <p class="text-xl font-bold">首页</p>
+            </div>
+            <hr class="mx-4">
+            <ul class="p-4 w-full">
+                <li class="py-3">
+                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
+                        <p class="text-red-700">在线工具</p>
+                    </div>
+                    <ul class="hidden">
+                        <li class="m-4 text-sm">全部</li>
+                        <li class="m-4 text-sm">前端</li>
+                        <li class="m-4 text-sm">设计</li>
+                    </ul>
+                </li>
+                <li class="py-3">
+                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
+                        <p>优质文章</p>
+                    </div>
+                    <ul class="hidden">
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                    </ul>
+                </li>
+                <li class="py-3">
+                    <div class="flex justify-between items-center">
+                        <p>API接口</p>
+                    </div>
+                </li>
+                <li class="py-3">
+                    <div class="flex justify-between items-center child-arrow-down" onclick="menuChileToggle(this)">
+                        <p>源码下载</p>
+                    </div>
+                    <ul class="hidden">
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                        <li class="m-4 text-sm">测试列表</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
     <footer class="footer dark:bg-current">
         <div class="container mx-auto flex py-4 flex-wrap">
             <div class="footer-item w-full md:w-3/12 p-6">
@@ -352,24 +352,6 @@
             </ul>
         </div>
     </footer>
-    <script>
-        const mobileMenu = document.getElementById("mobileMenu")
-        function openMenu() {
-            mobileMenu.classList.add("on")
-        }
-        function closeMenu() {
-            mobileMenu.classList.remove("on")
-        }
-        function menuChileToggle(event) {
-            if (event.parentNode.children[1].getAttribute("class").indexOf("hidden") == -1) {
-                event.parentNode.children[1].classList.add("hidden")
-                event.classList.remove("child-arrow-down-to-up")
-            }else{
-                event.parentNode.children[1].classList.remove("hidden")
-                event.classList.add("child-arrow-down-to-up")
-            }
-        }
-    </script>
 </body>
 
 </html>

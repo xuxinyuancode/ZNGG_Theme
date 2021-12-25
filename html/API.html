@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tailwind.css">
+    <script src="../js/site.js"></script>
     <title>Index</title>
 </head>
 
@@ -35,8 +36,9 @@
                         <a href="">源码下载</a>
                         <span class="hob invisible bg-black dark:bg-gray-600"></span>
                     </li>
-                    <li class="px-2 my-auto flex relative md:hidden">
-                        <span><img src="../image/system/menu.svg" class="w-5 h-5 cursor-pointer" alt="" srcset=""></span>
+                    <li onclick="openMenu()" class="px-2 my-auto flex relative md:hidden">
+                        <span><img src="../image/system/menu.svg" class="w-5 h-5 cursor-pointer" alt=""
+                                srcset=""></span>
                     </li>
                     <li class="px-2 my-auto flex relative">
                         <span><img src="../image/system/search.svg" class="w-5 h-5 cursor-pointer" alt=""
@@ -71,13 +73,13 @@
     </section>
     <section class="mx-auto bg-white">
         <ul class="flex">
-            <li class="w-3/12 text-center"><div class="w-auto"><p class="hover:bg-gray-700 px-4 py-2">简介</p></div></li>
-            <li class="w-3/12 text-center"><div class="w-auto"><p class="hover:bg-gray-700 px-4 py-2">列表</p></div></li>
-            <li class="w-3/12 text-center"><div class="w-auto"><p class="hover:bg-gray-700 px-4 py-2">教程</p></div></li>
-            <li class="w-3/12 text-center"><div class="w-auto"><p class="hover:bg-gray-700 px-4 py-2">反馈</p></div></li>
+            <li class="w-3/12 text-center"><a href="#introduce"><div class="w-auto"><p class="hover:bg-gray-700 hover:text-white px-4 py-3">简介</p></div></a></li>
+            <li class="w-3/12 text-center"><a href="#introduce"><div class="w-auto"><p class="hover:bg-gray-700 hover:text-white px-4 py-3">列表</p></div></a></li>
+            <li class="w-3/12 text-center"><a href="#introduce"><div class="w-auto"><p class="hover:bg-gray-700 hover:text-white px-4 py-3">教程</p></div></a></li>
+            <li class="w-3/12 text-center"><a href="#introduce"><div class="w-auto"><p class="hover:bg-gray-700 hover:text-white px-4 py-3">反馈</p></div></a></li>
         </ul>
     </section>
-    <section class="container h-screen">
+    <section id="introduce" class="container h-screen">
 
     </section>
 

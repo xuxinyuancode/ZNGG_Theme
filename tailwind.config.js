@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
-    enabled:false,
-    content:[
+    enabled: true,
+    content: [
       'html/*.html'
     ]
   },

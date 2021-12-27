@@ -1,12 +1,12 @@
 {
   "name": "ZNGG_Theme",
   "version": "1.0.0",
-  "description": "本项目使用tailwindｃｓｓ，本意是想要做出一个好看的在前工具网站。\r 目标地址：https://zn.gg",
+  "description": "本项目使用tailwindcss，本意是想要做出一个好看的在前工具网站。\r 目标地址: https://zn.gg",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build":"npx tailwindcss --postcss -o tailwind.css"
+    "build": "postcss build ./css/tailwind.css -o tailwind.css"
   },
   "repository": {
     "type": "git",
